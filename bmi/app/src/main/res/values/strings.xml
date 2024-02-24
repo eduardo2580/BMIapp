@@ -1,4 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">bmi</string>
     <string name="bmi_calculator">BMI Calculator</string>
+    <string name="weight_hint">Enter Weight (kg)</string>
+    <string name="weight_helper_text">Enter your weight in kilograms</string>
+    <string name="height_hint">Enter Height (cm)</string>
+    <string name="height_helper_text">Enter your height in centimeters</string>
+    <string name="age_hint">Enter Age</string>
+    <string name="age_helper_text">Enter your age</string>
+    <string name="muscle_mass_hint">Enter Muscle Mass (kg)</string>
+    <string name="muscle_mass_helper_text">Optional: Enter your muscle mass</string>
+    <string name="body_composition_hint">Enter Body Composition (%)</string>
+    <string name="body_composition_helper_text">Optional: Enter your body composition percentage</string>
+    <string name="fat_distribution_hint">Enter Fat Distribution (%)</string>
+    <string name="fat_distribution_helper_text">Optional: Enter your fat distribution percentage</string>
+    <string name="fitness_level_hint">Enter Fitness Level</string>
+    <string name="fitness_level_helper_text">Optional: Enter your fitness level</string>
+    <string name="calculate_button">Calculate BMI</string>
 </resources>

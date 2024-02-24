@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/colorBackground">
 
     <!-- TextInputLayout for Weight -->
     <com.google.android.material.textfield.TextInputLayout
@@ -13,8 +14,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Weight (kg)"
-        app:helperText="Enter your weight in kilograms">
+        android:hint="@string/weight_hint"
+        app:helperText="@string/weight_helper_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/weightEditText"
@@ -30,8 +31,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Height (cm)"
-        app:helperText="Enter your height in centimeters">
+        android:hint="@string/height_hint"
+        app:helperText="@string/height_helper_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/heightEditText"
@@ -47,8 +48,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Age"
-        app:helperText="Enter your age">
+        android:hint="@string/age_hint"
+        app:helperText="@string/age_helper_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ageEditText"
@@ -58,14 +59,14 @@
             android:imeOptions="actionDone" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- TextInputLayouts for Optional Factors (muscle mass, body composition, fat distribution, fitness level) -->
+    <!-- TextInputLayouts for Optional Factors -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/muscleMassInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Muscle Mass (kg)"
-        app:helperText="Optional: Enter your muscle mass">
+        android:hint="@string/muscle_mass_hint"
+        app:helperText="@string/muscle_mass_helper_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/muscleMassEditText"
@@ -80,8 +81,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Body Composition (%)"
-        app:helperText="Optional: Enter your body composition percentage">
+        android:hint="@string/body_composition_hint"
+        app:helperText="@string/body_composition_helper_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/bodyCompositionEditText"
@@ -96,8 +97,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Fat Distribution (%)"
-        app:helperText="Optional: Enter your fat distribution percentage">
+        android:hint="@string/fat_distribution_hint"
+        app:helperText="@string/fat_distribution_helper_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/fatDistributionEditText"
@@ -112,8 +113,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Fitness Level"
-        app:helperText="Optional: Enter your fitness level">
+        android:hint="@string/fitness_level_hint"
+        app:helperText="@string/fitness_level_helper_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/fitnessLevelEditText"
@@ -129,7 +130,7 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate BMI"
+        android:text="@string/calculate_button"
         android:layout_marginTop="16dp" />
 
     <!-- Results TextView -->
@@ -142,6 +143,7 @@
         android:textSize="16sp" />
 
 </LinearLayout>
+
 
 
 
